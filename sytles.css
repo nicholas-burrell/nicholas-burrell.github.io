@@ -1,0 +1,12 @@
+/* styles.css */
+
+/* Apply border to the navigation bar */
+.navbar {
+    border: 2px solid #5cbd59;
+}
+
+/* Apply border to the entire page */
+body {
+    border: 2px solid #5cbd59;
+    padding: 20px; /* Add padding to prevent content from touching the border */
+}
