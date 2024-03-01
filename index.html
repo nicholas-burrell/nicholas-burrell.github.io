@@ -12,48 +12,26 @@
 <body>
 
 <!-- Navigation Bar -->
-
-<!-- About Section -->
-<section id="about" class="container mt-5">
-    <h2>About Me</h2>
-    <p>Write a brief introduction about yourself and your interest in cybersecurity.</p>
-</section>
-
-<!-- Education Section -->
-<section id="education" class="container mt-5">
-    <h2>Education</h2>
-    <p>Provide details about your academic background, degrees, and relevant coursework.</p>
-</section>
-
-<!-- Skills Section -->
-<section id="skills" class="container mt-5">
-    <h2>Skills</h2>
-    <p>List your technical skills, certifications, and any other relevant qualifications.</p>
-</section>
-
-<!-- Projects Section -->
-<section id="projects" class="container mt-5">
-    <h2>Projects</h2>
-    <p>Showcase your cybersecurity projects with descriptions, technologies used, and your role.</p>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="container mt-5">
-    <h2>Contact</h2>
-    <p>Provide a way for recruiters to contact you. You can include a form or your email address.</p>
-</section>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Your Name</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
 <!-- Add Bootstrap JS and jQuery CDN links -->
-<div id="navigation"></div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script>
-    // Include the navigation bar using jQuery
-    $(function(){
-        $("#navigation").load("navigation.html");
-    });
-</script>
 
 </body>
 </html>
