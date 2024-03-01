@@ -1,0 +1,34 @@
+/* styles.css */
+
+/* Apply thicker solid line under the entire navigation bar */
+.navbar {
+    border-bottom: 4px solid #5cbd59;
+}
+
+/* Adjust the color of the active nav-link if needed */
+.navbar-nav .nav-item.active {
+    border-color: #5cbd59;
+}
+
+/* Set the color of the text in the navigation bar to solid black */
+.navbar-nav .nav-item {
+    color: black;
+}
+
+/* Set the color of the active nav-link if needed */
+.navbar-nav .nav-item.active .nav-link {
+    color: black;
+}
+
+/* Add sliding effect for paragraphs */
+#about .slide-in {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 1s, transform 1s;
+    color: black; /* Set text color to black */
+}
+
+#about .slide-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
