@@ -2,7 +2,10 @@
 
 /* Apply thicker solid line under the entire navigation bar */
 .navbar {
-    border-bottom: 4px solid #5cbd59;
+    border-bottom: 5px solid #5cbd59;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
 }
 
 /* Adjust the color of the active nav-link if needed */
@@ -13,6 +16,8 @@
 /* Set the color of the text in the navigation bar to solid black */
 .navbar-nav .nav-item {
     color: black;
+    transition: color 0.3s ease-in-out; /* Add transition for smooth color change */
+    margin-right: 40px; /* Adjust the right margin to bring sections closer */
 }
 
 /* Set the color of the active nav-link if needed */
@@ -20,15 +25,34 @@
     color: black;
 }
 
-/* Add sliding effect for paragraphs */
-#about .slide-in {
-    opacity: 0;
-    transform: translateY(50%);
-    transition: opacity 1s, transform 1s;
-    color: black; /* Set text color to black */
+/* Change text color and apply scaling on hover */
+.navbar-nav .nav-item:hover {
+    color: #5cbd59;
+    transform: scale(1.10); /* Scale to 105% on hover */
 }
 
-#about .slide-in.active {
-    opacity: 1;
-    transform: translateY(0);
+/* Increase font size for the brand name and vertically align to center */
+.navbar-brand {
+    font-size: 32px; /* Adjust the font size to your preference */
+    line-height: 56px; /* Adjust the line height to vertically align with the navbar height */
+    padding-left: 20px; /* Add left padding to move "Nicholas Burrell" towards the center */
 }
+
+/* Move the other sections slightly down */
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px; /* Adjust the top margin to move the other sections downward */
+    margin-left: 10px; /* Adjust the left margin to control horizontal position */
+}
+
+/* styles.css */
+
+/* Center the icons vertically */
+.navbar-brand i {
+    vertical-align: middle;
+    margin-top: -5px; /* Adjust the margin to fine-tune the vertical positioning */
+    padding-left: 25px;
+}
+
